@@ -20,6 +20,9 @@
                 // GA track every fragment loaded page.
                 _gaq.push(['_trackPageview', href]);
             }
+        }).on('startfragmentload', function() {
+            // Hide screenshot overlay on back button hit.
+            z.win.trigger('dismissLightbox');
         });
 
         // Check for mobile sizing.

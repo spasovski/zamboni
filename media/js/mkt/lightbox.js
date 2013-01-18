@@ -129,6 +129,8 @@
         });
     }
 
+    z.win.on('dismissLightbox', hideLightbox);
+
     function hideLightbox() {
         pauseVideos();
         $lightbox.removeClass('show');
