@@ -16,7 +16,6 @@ from amo.urlresolvers import reverse, get_outgoing_url
 from amo.utils import JSONEncoder
 from translations.helpers import truncate
 from versions.compare import version_int as vint
-from mkt.webapps.models import Installed
 
 import mkt
 
@@ -260,7 +259,7 @@ def market_tile(context, product, link=True, src=''):
         return jinja2.Markup(t.render(c))
 
     elif product.is_persona():
-        classes = ['product', 'mkt-tile', 'arrow']
+        classes = ['product', 'mkt-tile']
         product_dict = product_as_dict_theme(request, product)
         data_attrs = {
             'product': json.dumps(product_dict, cls=JSONEncoder),
