@@ -679,6 +679,10 @@ MINIFY_BUNDLES = {
             'js/lib/jquery-1.6.4.js',
             'js/impala/preloaded.js'
         ),
+        # AMOlytics: Both Impala and legacy.
+        'analytics': (
+            'js/zamboni/analytics.js',
+        ),
         # Impala: Things to be loaded at the bottom
         'impala': (
             'js/lib/underscore.js',

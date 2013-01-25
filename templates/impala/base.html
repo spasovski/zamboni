@@ -38,6 +38,7 @@
     {% endif %}
 
     {{ js('preload') }}
+    {{ js('analytics') }}
   </head>
   <body class="html-{{ DIR }} {{ request.APP.short }} moz-header-slim {% block bodyclass %}{% endblock %} is-impala"
         data-app="{{ request.APP.short }}"
