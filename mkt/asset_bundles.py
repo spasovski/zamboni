@@ -330,7 +330,9 @@ JS = {
         'js/mkt/install.js',
         'js/mkt/buttons.js',
         'js/mkt/reviewers.js',
+        'js/zamboni/editors.js',
         'js/devreg/menupicker.js',
+        'js/devreg/expandable.js',
         'js/devreg/reviewers_init.js',
     ),
     'mkt/stats': (
